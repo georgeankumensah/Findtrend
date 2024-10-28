@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000000;
+}
+
+nav {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding: 24px 18px;
+  justify-content: space-between;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 10.32px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a img {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+nav a span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav > span {
+  color: white;
+}
+
+.btn-grp {
+  display: none;
+}
+
+.btn-grp button {
+  border: none;
+  height: 42px;
+  width: 129px;
+  border-radius: 40px;
+  font-size: 18px;
+}
+.login-btn {
+  background: transparent;
+  color: white;
+}
+.register-btn {
+  color: #000000;
+  background: white;
+}
+
+.hero {
+  /* height: calc(100vh-88px); */
+  padding: 0 30px;
+}
+
+.hero h1 {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+}
+.hero p {
+  color: #8b8b8b;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.hero .arr-btn {
+  display: flex;
+  background: red;
+  border: 2px solid red;
+}
+
+.hero button {
+  border-radius: 40px;
+  width: 139px;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  display: block;
+  border: none;
+  background: #a8ff35;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero button img {
+  display: none;
+}
+
+.hero .image-stack-row {
+  display: none;
+}
+.hero .image-stack-column {
+  height: 309px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.open {
+  /* height: 541px; */
+  background: #a8ff35;
+  padding: 80px 28px;
+}
+.open h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.open p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 34px;
+}
+
+.openmob {
+  display: block;
+  margin: 0 auto;
+  height: 202px;
+  margin-top: 32px;
+}
+
+.opendesk {
+  display: none;
+}
+
+.cta {
+  padding: 140px 28px;
+  background: white;
+}
+
+.cta h3 {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.cta .light {
+  color: #adadad;
+}
+
+.findtrend {
+  background: white;
+  padding: 140px 28px;
+}
+
+.findtrend h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.findtrend .grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+.findtrend .grid div {
+  background: #f5f5f5;
+
+  height: 74px;
+  width: 162px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.findtrend .grid div img {
+  object-fit: contain;
+  height: 25px;
+  width: 110px;
+}
+
+.platform {
+  background: #fafafa;
+  padding: 80px 28px;
+}
+
+.platform h3 {
+  font-size: 36px;
+  text-align: center;
+}
+.platform .icons {
+  display: block;
+  margin: 0 auto;
+  height: 64px;
+  overflow: hidden;
+}
+
+.platform .tweet1 {
+  display: block;
+  margin: 0 auto;
+  /* height: 274px; */
+  height: 116px;
+  margin-top: 77px;
+}
+
+.platform .tweet2 {
+  display: block;
+  margin: 0 auto;
+  height: 344px;
+  margin-top: 16px;
+}
+.platform .tweet3 {
+  display: block;
+  margin: 0 auto;
+  height: 116px;
+  margin-top: 16px;
+}
+
+.platform button {
+  height: 57px;
+  border-radius: 40px;
+  background: #000;
+  color: white;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 152px;
+  height: 44px;
+  font-size: 14px;
+  border: none;
+
+  margin-top: 32px;
+}
+
+.deals {
+  padding: 140px 28px;
+  background: #000;
+}
+
+.deals h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.deals .card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  height: 602px;
+  width: 339px;
+  display: flex;
+  flex-direction: column;
+
+  /* border: 2px solid red; */
+}
+.deals .grid {
+  display: grid;
+  max-width: 1160px;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 14px;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+.deals .card .title {
+  font-size: 36px;
+  font-weight: 400;
+  /* border: 2px solid red; */
+}
+.deals .offer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+  /* border: 2px solid purple; */
+}
+
+.deals .card .description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 14px;
+  /* border: 2px solid red; */
+}
+
+.deals .card .price {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 32px;
+  /* border: 2px solid red; */
+}
+.deals .card .price span {
+  font-size: 18px;
+  /* border: 2px solid red; */
+}
+
+.deals .card hr {
+  border: none;
+  border-bottom: 0.5px solid #363535;
+  margin-top: 14px;
+}
+
+.deals .card .offer p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid red; */
+}
+
+.deals .card button {
+  border-radius: 40px;
+  height: 54px;
+  width: 278px;
+
+  border: none;
+  background: #a8ff35;
+  color: #000;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.deals .card:nth-child(2) {
+  background: #a8ff35;
+}
+
+.deals .card:nth-child(2) button {
+  background: #000;
+  color: white;
+}
+
+.join {
+  padding: 80px 28px;
+  background: #a8ff35;
+}
+
+.join h3 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.join h3 span {
+  color: #87d322;
+}
+
+.join button {
+  border-radius: 40px;
+  height: 44px;
+  width: 106px;
+  background: #000;
+  color: white;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+footer {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 98px;
+  padding: 62px 28px;
+}
+
+footer img {
+  height: 41px;
+  width: 170px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer ul a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: rgb(26, 60, 26);
+  }
+  nav {
+    padding: 28px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 99px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  nav .menu {
+    display: none;
+  }
+  .btn-grp {
+    display: flex;
+  }
+  .hero h1 {
+    font-size: 72px;
+  }
+  .hero p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .hero button {
+    font-size: 18px;
+    width: 180px;
+    height: 57px;
+  }
+
+  .hero button img {
+    position: absolute;
+    display: block;
+    top: -12px;
+    left: calc(180px + 18px);
+  }
+  .hero .image-stack-row {
+    height: 178px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 94px;
+  }
+  .hero .image-stack-column {
+    display: none;
+  }
+  .open {
+    /* height: 742px; */
+    padding: 140px 0;
+  }
+  .open h2 {
+    font-size: 72px;
+  }
+
+  .open p {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 666px;
+  }
+
+  .openmob {
+    display: none;
+  }
+
+  .opendesk {
+    display: block;
+    margin: 0 auto;
+    height: 202px;
+    margin-top: 32px;
+  }
+  .cta {
+    padding: 80px 0px;
+  }
+
+  .cta h3 {
+    font-size: 64px;
+  }
+  .findtrend h3 {
+    font-size: 64px;
+  }
+
+  .findtrend .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .findtrend .grid div {
+    height: 120px;
+    width: 266px;
+  }
+
+  .findtrend .grid div img {
+    object-fit: contain;
+    height: 40px;
+    width: 190px;
+  }
+
+  .platform {
+    padding: 140px 28px;
+  }
+
+  .platform h3 {
+    font-size: 64px;
+  }
+
+  .platform .icons {
+    display: block;
+    margin: 0 auto;
+    height: 124px;
+  }
+
+  .platform .tweet1 {
+    height: 274px;
+    margin-top: 32px;
+  }
+  .platform .tweet2 {
+    height: 804px;
+    margin-top: 43px;
+  }
+  .platform .tweet3 {
+    height: 274px;
+    margin-top: 40px;
+  }
+
+  .platform button {
+    width: 198px;
+    height: 57px;
+    font-size: 18px;
+
+    margin-top: 80px;
+  }
+
+  .deals .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .join {
+    padding: 140px 28px;
+  }
+  
+  .join h3 {
+    font-size: 64px;
+  }
+
+  
+  .join button {
+    width: 180px;
+    height: 57px;
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+
+
+
+  footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
